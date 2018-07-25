@@ -3,7 +3,7 @@ pipeline {
     stages {
 	 stage('Pull Code'){
 		steps{
-			git credentialsId: 'GitCred', url: 'https://github.com/alubillivani/cicd-pipeline-train-schedule-pipelines'
+			git credentialsId: 'GitCred', url: 'https://github.com/alubillivani/cicd-pipeline-train-schedule-pipelines.git'
 		    }		    
 	 }	    
         stage('Build') { 
